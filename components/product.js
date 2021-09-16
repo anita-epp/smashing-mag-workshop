@@ -47,8 +47,8 @@ function Product({ product }) {
            * Step 14
            * Uncomment both <RichText /> components below
            */}
-          {/* <RichText render={brand} />
-          <RichText render={title} /> */}
+          <RichText render={brand} />
+          <RichText render={title} />
           <Box as='p' sx={{ fontSize: '24px', marginBottom: '24px' }}>
             {formatCurrencyString({ value: price, currency })}
           </Box>
@@ -63,7 +63,7 @@ function Product({ product }) {
              * Step 15
              * Uncomment the RichText component below
              */}
-            {/* <RichText render={callout} htmlSerializer={htmlSerializer} /> */}
+            <RichText render={callout} htmlSerializer={htmlSerializer} />
           </Box>
         </Flex>
       </Flex>
