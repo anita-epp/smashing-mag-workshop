@@ -52,8 +52,10 @@ export default async (req, res) => {
         allowed_countries: ['US', 'CA'],
       },
       mode: 'payment',
-      success_url: `${process.env.DEPLOY_URL}/success`,
-      cancel_url: process.env.DEPLOY_URL,
+      success_url: `${process.env.SITE_URL}/success`,
+      cancel_url: process.env.SITE_URL,
+      // success_url: `http://localhost:8888/success`,
+      // cancel_url: `http://localhost:8888/success`,
       line_items,
     });
   } catch (error) {
