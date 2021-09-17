@@ -52,8 +52,8 @@ export default async (req, res) => {
         allowed_countries: ['US', 'CA'],
       },
       mode: 'payment',
-      success_url: `${process.env.URL}/success`,
-      cancel_url: process.env.URL,
+      success_url: `${process.env.DEPLOY_URL}/success`,
+      cancel_url: process.env.DEPLOY_URL,
       line_items,
     });
   } catch (error) {
